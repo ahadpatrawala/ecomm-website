@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
-import { register } from '../actions/userActions';
+import { register, signin } from '../actions/userActions';
 
 function RegisterScreen(props){
 
@@ -12,10 +12,11 @@ function RegisterScreen(props){
     const userRegister = useSelector(state=> state.userRegister);
     const{loading, userInfo, error} = userRegister;
     const dispatch = useDispatch();
+    const redirect = props.location.search? props.location.search.split("=")[1]:'/';
 
   useEffect(()=>{
       if(userInfo){
-          props.history.push("/");
+          props.history.push(redirect);
       }
       return () =>{
       };
@@ -52,13 +53,13 @@ function RegisterScreen(props){
                     </li>
                     <li>
                         <label htmlFor="rePassword">Re-Enter Password</label>
-                        <input type="Password" id="rePassword" name="rePassword" onChange={(e)=>setPassword(e.target.value)}></input>
+                        <input type="rePassword" id="rePassword" name="rePassword" onChange={(e)=>setRePassword(e.target.value)}></input>
                     </li>
                     <li>
                         <button type="submit" className="button primary">Register</button>
                     </li>
                     <li>
-                        Already have an account? <Link to="/signin">Sign-In</Link>
+                        Already have an account?  <Link to={signin === "/" ? "singin": "register?redirect="+redirect} className="button text-center secondary">Create your account</Link>
                     </li>
                 </ul>
             </form>

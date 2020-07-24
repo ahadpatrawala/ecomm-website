@@ -10,10 +10,11 @@ function SignInScreen(props){
     const userSignin = useSelector(state=> state.userSignin);
     const{loading, userInfo, error} = userSignin;
     const dispatch = useDispatch();
-
-  useEffect(()=>{
+    const redirect = props.location.search? props.location.search.split("=")[1]:'/';
+  
+    useEffect(()=>{
       if(userInfo){
-          props.history.push("/");
+          props.history.push(redirect);
       }
       return () =>{
       };
@@ -45,13 +46,13 @@ function SignInScreen(props){
                         <input type="password" id="password" name="password" onChange={(e)=>setPassword(e.target.value)}></input>
                     </li>
                     <li>
-                        <button type="submit" className="button primary">SignIn</button>
+                        <button type="submit" className="button primary">Sign In</button>
                     </li>
                     <li>
                         New User?
                     </li>
                     <li>
-                        <Link to="/register" className="button text-center secondary">Create your account</Link>
+                        <Link to={redirect === "/" ? "register": "register?redirect="+redirect} className="button text-center secondary">Create your account</Link>
                     </li>
                 </ul>
             </form>

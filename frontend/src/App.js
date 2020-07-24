@@ -7,6 +7,10 @@ import CartScreen from './screens/CartScreen';
 import SignInScreen from './screens/SigninScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import { useSelector } from 'react-redux';
+import ProductsScreen from './screens/ProductsScreen';
+import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 function App() {
 
@@ -29,12 +33,15 @@ const closeMenu = () =>{
         <button onClick={openMenu}>
           &#9776;
         </button>
-        <Link to="/">Ecommerce</Link>
+        <Link to="/">GoodBuy</Link>
       </div>
       <div className="header-links">
-        <a href="cart.html">Cart</a>
+        <Link to="/cart">Cart</Link>
         {
-          userInfo ? <Link to="/profile">{userInfo.name}</Link>
+          userInfo ? userInfo.isAdmin ? 
+           <Link to="/products">Admin</Link>
+           :
+           <Link to="/profile">{userInfo.name}</Link>
           :
           <Link to="/signin">Sign In</Link>
         }
@@ -59,9 +66,13 @@ const closeMenu = () =>{
         <Route path="/cart/:id?" component={CartScreen} />
         <Route path="/signin" component={SignInScreen}/>
         <Route path="/register" component={RegisterScreen}/>
+        <Route path="/products" component={ProductsScreen}/>
+        <Route path="/shipping" component={ShippingScreen}/>
+        <Route path="/payment" component={PaymentScreen}/>
+        <Route path="/placeorder" component={PlaceOrderScreen}/>
      </div>
      </main>
-    <footer className="footer">All right reserved.</footer>
+    <footer className="footer">All rights reserved.</footer>
    </div>
    </BrowserRouter>
   );
