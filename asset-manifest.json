@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/github.io/ecomm-website/static/css/main.cb5ccba4.chunk.css",
-    "main.js": "/github.io/ecomm-website/static/js/main.bcc14c69.chunk.js",
-    "main.js.map": "/github.io/ecomm-website/static/js/main.bcc14c69.chunk.js.map",
-    "runtime-main.js": "/github.io/ecomm-website/static/js/runtime-main.550b068d.js",
-    "runtime-main.js.map": "/github.io/ecomm-website/static/js/runtime-main.550b068d.js.map",
-    "static/js/2.383a7b96.chunk.js": "/github.io/ecomm-website/static/js/2.383a7b96.chunk.js",
-    "static/js/2.383a7b96.chunk.js.map": "/github.io/ecomm-website/static/js/2.383a7b96.chunk.js.map",
-    "index.html": "/github.io/ecomm-website/index.html",
-    "precache-manifest.5a1fec438c5a0f08788ccbadccde86e6.js": "/github.io/ecomm-website/precache-manifest.5a1fec438c5a0f08788ccbadccde86e6.js",
-    "service-worker.js": "/github.io/ecomm-website/service-worker.js",
-    "static/css/main.cb5ccba4.chunk.css.map": "/github.io/ecomm-website/static/css/main.cb5ccba4.chunk.css.map",
-    "static/js/2.383a7b96.chunk.js.LICENSE.txt": "/github.io/ecomm-website/static/js/2.383a7b96.chunk.js.LICENSE.txt"
+    "main.css": "/ecomm-website/static/css/main.cb5ccba4.chunk.css",
+    "main.js": "/ecomm-website/static/js/main.bcc14c69.chunk.js",
+    "main.js.map": "/ecomm-website/static/js/main.bcc14c69.chunk.js.map",
+    "runtime-main.js": "/ecomm-website/static/js/runtime-main.2e20025a.js",
+    "runtime-main.js.map": "/ecomm-website/static/js/runtime-main.2e20025a.js.map",
+    "static/js/2.383a7b96.chunk.js": "/ecomm-website/static/js/2.383a7b96.chunk.js",
+    "static/js/2.383a7b96.chunk.js.map": "/ecomm-website/static/js/2.383a7b96.chunk.js.map",
+    "index.html": "/ecomm-website/index.html",
+    "precache-manifest.46bcee688d2fbf2c5d837d2281ee8c89.js": "/ecomm-website/precache-manifest.46bcee688d2fbf2c5d837d2281ee8c89.js",
+    "service-worker.js": "/ecomm-website/service-worker.js",
+    "static/css/main.cb5ccba4.chunk.css.map": "/ecomm-website/static/css/main.cb5ccba4.chunk.css.map",
+    "static/js/2.383a7b96.chunk.js.LICENSE.txt": "/ecomm-website/static/js/2.383a7b96.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.550b068d.js",
+    "static/js/runtime-main.2e20025a.js",
     "static/js/2.383a7b96.chunk.js",
     "static/css/main.cb5ccba4.chunk.css",
     "static/js/main.bcc14c69.chunk.js"
