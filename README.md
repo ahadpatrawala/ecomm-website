@@ -11,8 +11,8 @@ See a demo at [GoodBuy Website](https://goodbuy-ecomm.herokuapp.com)
 - MongoDB: Mongoose
 
 ## Login Credentials
-User: user1@example.com
-Password: 1234
+**User:** _user1@example.com_
+**Password:** _1234_
 
 ## Working on
 - [ ] Logout Feature
